@@ -33,15 +33,16 @@ document
 function addItemToList(value) {
   // selects the list and assigns it to a variable called list
   // <ul id="list"></ul>
-  let list = document.getElementById("list");
+  let list = document.getElementById("listItem");
 
   // creating a li element and assigns it to a variable called item
   // <li></li>
-  let item = document.createElement("li");
+  let item = document.createElement("p");
 
   // add the class "item" to the element
   // <li class="item"></li>
   item.classList.add("item");
+  console.log("this is some random junk to see if I can force a merge conflict");
 
   // creating a input element and assigns to a variable called checkbox
   // <input />
@@ -66,33 +67,6 @@ function addItemToList(value) {
 
   // creating a span element and assigning it to a variable called taskContent
   // <span></span>
-  let taskContent = document.createElement("span");
-
-  // adding the class "task-content" to the element
-  // <span class="task-content"></span>
-  taskContent.classList.add("task-content");
-
-  // setting the content of the elment to value
-  // <span class="task-content">value</span>
-  taskContent.innerText = value;
-
-  // creating a button and assigning it to a variable called deleteButton
-  // <button></button>
-  let deleteButton = document.createElement("button");
-
-  // adding the class "delete-button" to the element
-  // <button class="delete-button"></button>
-  deleteButton.classList.add("delete-button");
-
-  // setting the content of the element to "Delete"
-  // <button class="delete-button">Delete</button>
-  deleteButton.innerText = "Remove";
-
-  // adding an event listener to the deleteButton that listens for a click
-  deleteButton.addEventListener("click", function () {
-    // removing the element from the list
-    list.removeChild(item);
-  });
 
   // adding the checkbox input element to the li
   /*
